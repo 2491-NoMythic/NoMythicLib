@@ -37,8 +37,6 @@ dependencies {
 // sourceCompatibility = '1.8'
 // targetCompatibility = '1.8'
 
-group = 'com.2491NoMythic'
-
 publishing {
   repositories {
     maven {
@@ -52,6 +50,7 @@ publishing {
   }
   publications {
     maven(MavenPublication) {
+      groupId 'com.2491NoMythic'
       from components.java
     }
   }
