@@ -51,6 +51,7 @@ publishing {
   publications {
     maven(MavenPublication) {
       groupId 'com.2491NoMythic'
+      version '0.0.7'
       from components.java
     }
   }
