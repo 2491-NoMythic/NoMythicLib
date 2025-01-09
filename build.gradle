@@ -52,7 +52,7 @@ publishing {
     maven(MavenPublication) {
       groupId 'com.nomythic'
       artifactId 'nomythic-lib'
-      version '0.0.7'
+      version '0.0.8'
       from components.java
     }
   }
