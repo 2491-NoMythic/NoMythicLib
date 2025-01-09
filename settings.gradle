@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'NoMythicLib'
+group = 'com.2491NoMythic'
