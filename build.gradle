@@ -51,8 +51,8 @@ publishing {
   publications {
     maven(MavenPublication) {
       groupId 'com.nomythic'
-      artifactId 'nomythic-lib'
-      version '0.0.8'
+      artifactId 'nomythiclib'
+      version '0.0.9'
       from components.java
     }
   }
