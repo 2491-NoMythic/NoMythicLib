@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'maven-publish'
+    id 'edu.wpi.first.GradleRIO' version '2025.2.1'
 }
 
 // java {
@@ -21,6 +22,7 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -32,10 +34,13 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
-}
 
-// sourceCompatibility = '1.8'
-// targetCompatibility = '1.8'
+    // For wpilib
+    implementation wpi.java.deps.wpilib()
+
+    // To pull vendor dependancies
+    implementation wpi.java.vendor.java()
+}
 
 publishing {
   repositories {
